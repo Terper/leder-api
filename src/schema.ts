@@ -12,6 +12,7 @@ export const schema = buildSchema(`
     author: String
     points: [GeoPoint]
     image: String
+    imageAttribution: String
     id: ID
   }
   type Query {

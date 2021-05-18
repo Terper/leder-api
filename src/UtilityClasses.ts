@@ -11,8 +11,9 @@ export class Route{
   points: any
   name: string
   image: string
+  imageAttribution: string
   description: any
-  constructor(id: string, { author, points, name, description, image }: any) {
+  constructor(id: string, { author, points, name, description, image, imageAttribution }: any) {
     this.id = id
     this.author = author
     if (points) {
@@ -26,5 +27,6 @@ export class Route{
     this.name = name
     this.description = description
     this.image = image
+    this.imageAttribution = imageAttribution
   }
 }
